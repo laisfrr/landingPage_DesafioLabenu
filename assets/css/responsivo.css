@@ -127,6 +127,7 @@
     .imagens{
         width: 8.125rem;
         height: 11.25rem;
+        object-fit: cover;
     }
 
     .imagens-container{
@@ -174,7 +175,7 @@
         width: 18.75rem;
         font-size: 2.5rem;
         line-height: 2.5rem;
-        margin-top: 0.93rem;
+        margin-top: 1rem;
     }
 
     .vantagens-lista{
@@ -185,7 +186,7 @@
         line-height: 1.5rem;
         text-align: left;
         margin: 0 auto;
-        padding-bottom: 1.875rem;
+        padding-bottom: 3rem;
         font-weight: 500;
         margin-top: 1.5rem;
         border-bottom: 0.09rem solid #aaaaaa;
@@ -199,8 +200,10 @@
         text-align: center;
         align-items: center;
         height: 100vh;
-        justify-content: flex-start;
-        margin: 0; 
+        justify-content: inherit;
+        margin: 0rem; 
+        padding-top: 5rem;
+        gap: 70px;
     }
 
     .quemsomos-textos{
@@ -210,11 +213,22 @@
 
     .quemsomos-titulo{
         font-size: 2.5rem;
-        margin-top: 5.8rem;
+        margin-top: 0.8rem;
     }
 
     .quemsomos-descricao{
         margin: 1.25rem 0.31rem;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 21.25rem;
+        line-height: 1.5rem;
+    }
+
+    .quemsomos-descricao-hidden{
+        display: inherit;
+        color: var(--verde_escuro);
+        text-align: left;
+        margin: 0rem 0rem;
         font-size: 1rem;
         font-weight: 500;
         width: 21.25rem;
@@ -228,12 +242,13 @@
     .quemsomos-img{
         display: block;
         width: 18.75rem;
+        margin:1rem auto;
     }
 
     /*SEÇÃO FALE CONOSCO =======================================================*/
     .faleconosco{
         justify-content: center;
-        margin-top: 3.125rem;
+        margin-top: 0rem;
     }
     .faleconosco-titulo{
         margin: 0;

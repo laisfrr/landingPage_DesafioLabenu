@@ -296,6 +296,10 @@ figcaption {
     margin-top: 6.25rem;
 }
 
+.quemsomos-descricao-hidden{
+    display: none;
+}
+
 /*SEÇÃO FALE CONOSCO =======================================================*/
 
 .faleconosco{
@@ -368,7 +372,7 @@ input:focus {
     margin-top: 0.31rem;
 }
 
-#msg-sucess{
+#msg-success{
     color: #32CD32;
     font-weight: 400;
     font-size: 1rem;

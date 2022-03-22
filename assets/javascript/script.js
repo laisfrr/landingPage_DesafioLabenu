@@ -14,7 +14,7 @@ function verificarEmail(event){
     //VALIDAR SE ESTA NO FORMATO DE EMAIL
     if(!validarFormatoEmail(email.value)){
         document.getElementById('erro-email').innerHTML ="Erro no envio: Endereço de email inválido"
-        limparMsgSucess()
+        limparMsgSuccess()
         return
     }
         validarCaracteres();
@@ -22,7 +22,7 @@ function verificarEmail(event){
 //VALIDAR EMAIL COM REGEX
 function validarFormatoEmail(email) {
     var regex = /^[a-z0-9A-Z.]+@[a-z0-9]+\.[a-z]+([a-z]+)?$/;
-    limparMsgSucess()
+    limparMsgSuccess()
     return regex.test(email);
 }
 
@@ -32,7 +32,7 @@ function validarCaracteres() {
     const emailValue = document.querySelector('#email').value
     if(emailValue === undefined || !emailValue.includes("@")) {
         document.getElementById('erro-email').innerHTML ="Erro no envio: Endereço de email inválido"
-        limparMsgSucess()
+        limparMsgSuccess()
         return     
     }
 //SPLIT PARA SEPARAR O USER E O DOMAIN
@@ -42,7 +42,7 @@ function validarCaracteres() {
     //SE NAO INCLUIR O PONTO APOS O DOMINIO
     if(!dominio.includes(".")) {
         document.getElementById('erro-email').innerHTML ="Erro no envio: Endereço de email inválido"
-        limparMsgSucess()
+        limparMsgSuccess()
         return                
     }
 
@@ -54,12 +54,12 @@ function validarCaracteres() {
 //VALIDAR SE A QTDA DE CARACTERES ATENDE OS REQUISITOS E SE A MENSAGEM FOI COLOCADA
     if (user.length > 32 || dominio.length > 16){
         document.getElementById('erro-email').innerHTML ="Erro no envio: Endereço de email inválido"
-        limparMsgSucess()
+        limparMsgSuccess()
     }else if( textoRecebido == ""){
         document.getElementById('erro-msg').innerHTML ="Erro no envio: Insira uma mensagem"
-        limparMsgSucess()
+        limparMsgSuccess()
     } else {
-        document.getElementById('msg-sucess').innerHTML =`Obrigado(a) pelo contato, ${user}`
+        document.getElementById('msg-success').innerHTML =`Obrigado(a) pelo contato, ${user}`
         limparCampos()
         limparMsgErro()
     }
@@ -79,8 +79,8 @@ function limparMsgErro(){
     const emailErro = document.getElementById('erro-email').innerHTML = ""
 }
 
-function limparMsgSucess(){
-    const msgSucess = document.getElementById('msg-sucess').innerHTML =""
+function limparMsgSuccess(){
+    const msgSuccess = document.getElementById('msg-success').innerHTML =""
 }
 
 
