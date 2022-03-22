@@ -261,6 +261,7 @@ figcaption {
     justify-content: space-around;
     align-items: center;
     height: 100vh;
+    margin: 0rem;
 }
 
 .quemsomos-textos{

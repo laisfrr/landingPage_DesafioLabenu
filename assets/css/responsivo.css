@@ -168,6 +168,7 @@
         width: 100vw;
         height: 50vh;
         gap: 1.25rem;
+        padding-top: 12px;
     }
 
     .vantagens-titulo{
@@ -196,43 +197,48 @@
 
 
     .quemsomos{
+        display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        height: 100vh;
-        justify-content: inherit;
+        width: 100vw;
+        height: auto;
+        justify-content: center;
         margin: 0rem; 
-        padding-top: 5rem;
-        gap: 70px;
+        padding-top: 0rem;
+        gap: 50px;
     }
 
     .quemsomos-textos{
         width: 21.87rem;
-        margin-top: 0rem;
+        margin: 0rem;
     }
 
     .quemsomos-titulo{
         font-size: 2.5rem;
-        margin-top: 0.8rem;
+        margin-top: 7rem;
+        margin-bottom: 0.8rem;
     }
 
     .quemsomos-descricao{
-        margin: 1.25rem 0.31rem;
+        margin: 32px 0px 0px 0px;
         font-size: 1rem;
         font-weight: 500;
-        width: 21.25rem;
         line-height: 1.5rem;
+        text-align: left;
     }
 
     .quemsomos-descricao-hidden{
-        display: inherit;
+        display: block;
         color: var(--verde_escuro);
         text-align: left;
         margin: 0rem 0rem;
+        padding-bottom: 2rem;
         font-size: 1rem;
         font-weight: 500;
         width: 21.25rem;
         line-height: 1.5rem;
+        width: 18.75rem;
     }
 
     .quemsomos-imagem{
@@ -242,7 +248,7 @@
     .quemsomos-img{
         display: block;
         width: 18.75rem;
-        margin:1rem auto;
+        margin:0px;
     }
 
     /*SEÇÃO FALE CONOSCO =======================================================*/
