@@ -142,7 +142,8 @@
 
     .avaliacao-persona{
         flex-direction: column;
-        margin: 0;
+        margin: 0rem;
+        padding-top: 1.5rem;
     }
 
     .avaliacao-persona img{
@@ -153,12 +154,12 @@
     .persona-texto{
         flex-direction: column;
     }
-
+    
     .persona-texto p{
         width: 18.75rem;
         font-size: 0.8rem;
         line-height: 1.25rem;
-        text-align: center;
+        text-align:left;
         margin: 0 auto;
     }
 
@@ -172,7 +173,7 @@
         text-align: center;
         width: 18.75rem;
         font-size: 2.5rem;
-        line-height: 2rem;
+        line-height: 2.5rem;
         margin-top: 0.93rem;
     }
 
@@ -181,11 +182,13 @@
         width: 18.75rem;
         flex-direction: column;
         font-size:0.9rem;
-        line-height: 1.25rem;
+        line-height: 1.5rem;
         text-align: left;
         margin: 0 auto;
         padding-bottom: 1.875rem;
         font-weight: 500;
+        margin-top: 1.5rem;
+        border-bottom: 0.09rem solid #aaaaaa;
     }
 
 /*SEÇÃO QUEM SOMOS =======================================================*/
@@ -207,7 +210,7 @@
 
     .quemsomos-titulo{
         font-size: 2.5rem;
-        margin-top: 4.5rem;
+        margin-top: 5.8rem;
     }
 
     .quemsomos-descricao{
@@ -215,6 +218,7 @@
         font-size: 1rem;
         font-weight: 500;
         width: 21.25rem;
+        line-height: 1.5rem;
     }
 
     .quemsomos-imagem{
