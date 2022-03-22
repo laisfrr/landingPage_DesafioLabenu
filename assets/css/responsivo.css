@@ -198,7 +198,6 @@
         height: 100vh;
         justify-content: flex-start;
         margin: 0; 
-        
     }
 
     .quemsomos-textos{
@@ -208,7 +207,7 @@
 
     .quemsomos-titulo{
         font-size: 2.5rem;
-        margin-top: 4rem;
+        margin-top: 4.5rem;
     }
 
     .quemsomos-descricao{
