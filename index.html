@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="F4LIFE especialista em moradias universitárias">
+    <title>F4LIFE | Moradias Universitárias</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/responsivo.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.png">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="./assets/img/logo2.svg" alt="Logo da F4LIFE">
+        <nav class="cabecalho-menu">
+            <ul>
+                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-link" href="#home">Home</a></li>
+                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-link" href="#quemsomos">Quem somos</a></li>
+                <li class="cabecalho-menu-lista"><a class="cabecalho-menu-link" href="#faleconosco">Fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="conteudo" id="home">
+        <section class="conteudo-principal">
+            <img class="conteudo-principal-imagem" src="./assets/img/home2.png" alt="fotos de estudantes e moradias">
+            <article class="conteudo-principal-texto">
+                <h1 class="conteudo-principal-titulo">Bem-vindo(a)</h1>
+                <h2 class="conteudo-principal-subtitulo">Você é universitário(a) e está atrás de um lugar para morar?</h2>
+                <h2 class="conteudo-principal-subtitulo">Fale com a gente!</h2>
+                <a href="#faleconosco" class="conteudo-principal-botao">Fale conosco</a>
+            </article>
+        </section>
+        <section class="galeria-imagens">
+            <h1>A sua melhor escolhar em um único lugar!</h1>
+            <article class="imagens-container">
+                <figure class="foto-apartamento">
+                    <img class="imagens" src="./assets/img/apartament.jpg" alt="Foto do lado externo de um apartamento">
+                    <figcaption>Você escolhe o lugar!</figcaption>
+                </figure>
+                <figure class="foto-estudante">
+                    <figcaption>O conforto é garantido</figcaption>
+                    <img class="imagens" src="./assets/img/student.jpg" alt="Foto de uma estudante no quarto">
+                </figure>
+                <figure class="foto-interior">
+                    <img class="imagens" src="./assets/img/house.jpg" alt="Foto de uma sala com cozinha">
+                    <figcaption>e o espaço também.</figcaption>
+                </figure>
+            </article>
+        </section>
+        <section class="avaliacao-persona">
+            <article class="persona-texto">
+                <img src="./assets/img/persona.jpg" alt="Imagem de um rapaz de blusa preta usando óculos de grau">
+                <div class="persona-descricao">
+                    <p class="avaliacao">A F4LIFE sempre me proporcionou comodidade na hora de fechar o negócio, comecei minha graduação e não precisei me preocupar com minha moradia, pois a f4life me ajudou e só precisei escolher o local em que eu queria morar.</p>
+                    <p class="persona-nome">William Santos.</p>
+                </div>
+            </article>
+            <article class="vantagens">
+                <p class="vantagens-titulo">nossas vantagens</p>
+                <ul class="vantagens-lista">
+                    <li class="vantagens-lista-texto">Não precisa de fiador, seguro fiança ou depósito caução;</li>
+                    <li class="vantagens-lista-texto">Aluguel rápido e sem depender de ninguém;</li>
+                    <li class="vantagens-lista-texto">Agendamento online das visitas, negociação direta com o proprietário;</li>
+                    <li class="vantagens-lista-texto">Contrato digital, sem filas ou cartório;</li>
+                    <li class="vantagens-lista-texto">Sem custos inesperados no fim do mês.</li>
+                </ul>
+            </article>
+        </section>
+        <section class="quemsomos" id="quemsomos">
+            <article class="quemsomos-textos">
+                <h2 class="quemsomos-titulo">Quem Somos</h2>
+                <p class="quemsomos-descricao">A Life é uma empresa de aluguéis de repúblicas para pessoas universitárias, com especialidade em realizar reformas e prepara moradias para recepção de pessoas universitárias em um ambiente específico e otimizado para a vida de graduação.</p>
+            </article>
+            <img class="quemsomos-img" src="./assets/img/house-quemsomos.jpg" alt="foto do interior de uma casa">
+            <img class="quemsomos-imagem" src="./assets/img/amigos.png" alt="imagem de uma casa">
+        </section>
+        <section class="faleconosco" id="faleconosco">
+            <h1 class="faleconosco-titulo">Fale Conosco</h1>
+            <form class="faleconosco-formulario">
+                <p id="msg-sucess"></p>
+                <fieldset class="faleconosco-campo">
+                    <label for="email" class="faleconosco-texto">Email:</label>
+                    <input class="faleconosco-input" type="email" name="email" id="email" value="" placeholder="email@domínio.com" required>
+                </fieldset>
+                <p id="erro-email"></p>
+                <fieldset class="faleconosco-campo">
+                    <label for="mensagem" class="faleconosco-texto">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+                </fieldset>
+                <p id="erro-msg"></p>
+                <button id="submit" type="submit" class="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Nossas Redes Sociais:</p>
+        <nav class="rodape-conteudo">
+            <ul>
+                <li class="rodape-lista"><a href="https://www.facebook.com/" target="blank"><img src="./assets/img/facebook.svg" alt="icone do facebook"></a></li>
+                <li class="rodape-lista"><a href="https://www.instagram.com/" target="blank"><img src="./assets/img/instagram.svg" alt="ícone do instagram"></a></li>
+                <li class="rodape-lista"><a href="https://twitter.com/" target="blank"><img src="./assets/img/twitter.svg" alt="ícone do twitter"></a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+<script src="./assets/javascript/script.js"></script>
+
+</html>

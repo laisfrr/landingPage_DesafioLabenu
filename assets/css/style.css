@@ -1,0 +1,428 @@
+:root{
+    --azul_petroleo:#182D40;
+    --verde_escuro:#2A5559;
+    --verde_piscina:#468C8C;
+    --azul_bebe:#71D9CE;
+    --cinza:#F2F2F2;
+    --background:#132235;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, #132235 0%, #233A57 100%) no-repeat;
+    
+}
+/*SEÇÃO HEADER / MENU =======================================================*/
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem 0rem;
+    background-color: var(--background);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 2.5rem;
+}
+
+.cabecalho-imagem{
+    height: 4.5rem;
+}
+
+.cabecalho-menu{
+    display: flex;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cabecalho-menu-lista {
+    margin: 0 0.75rem;
+    display: inline;
+    list-style: none;
+}
+
+.cabecalho-menu-link{
+    text-decoration: none;
+    color: var(--cinza);
+}
+.cabecalho-menu-link:hover{
+    text-decoration: underline;
+    color: var(--azul_bebe);
+    transition: 0.5s;
+}
+
+/*SEÇÃO INICIO =======================================================*/
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    vertical-align: top;
+    height: 100vh;
+}
+
+.conteudo-principal-titulo{
+    font-size: 5rem;
+    font-weight: 100;
+    color: var(--azul_bebe);
+    line-height: 7.5rem;
+    margin-bottom: 2.06rem;
+    margin-top: 6.875rem;
+}
+
+.conteudo-principal-subtitulo{
+    font-size: 1.875rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--cinza);
+    width: 29.37rem;
+    margin-bottom: 0.75rem;
+}
+
+
+.conteudo-principal-botao{
+    color: var(--cinza);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 21.87rem;
+    height: 3.12rem;
+    box-sizing: border-box;
+    padding: 1rem 2rem;
+    border: 0.06rem solid var(--azul_bebe);
+    border-radius: 0.31rem;
+    margin-top: 1.87rem;
+    letter-spacing: 0.125rem;
+}
+
+.conteudo-principal-botao:hover{
+    background: var(--verde_piscina);
+    border: 0.06rem solid var(--azul_bebe);
+    font-size: 1.125rem;
+    font-weight: 700;
+    transition: 0.5s
+}
+.conteudo-principal-imagem{
+    margin-top: 6.87rem;
+}
+
+/*SEÇÃO IMAGENS  =======================================================*/
+
+.galeria-imagens{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--cinza);
+    text-align: center;
+    height: 100vh;
+}
+
+.galeria-imagens h1{
+    color: var(--verde_piscina);
+    font-size: 1.56rem;
+    letter-spacing: 0.09rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.foto-estudante{
+    margin-top: 6.25rem;
+}
+
+figcaption {
+    color: var(--azul_petroleo);
+    font-weight: bold;
+    letter-spacing: 0.075rem;
+    text-transform: uppercase;
+    margin: 0.93rem 0rem;
+}
+
+.imagens-container{
+    display: flex;
+    align-items: center;
+    margin-top: 3.75rem;
+    gap: 6.25rem;
+}
+
+
+.imagens{
+    width: 15.625rem;
+    height:21.87rem;
+    
+}
+
+/*SEÇÃO AVALIAÇÃO / VANTAGENS =======================================================*/
+
+
+.avaliacao-persona{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    gap: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+.avaliacao::before{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: '\201C';
+    font-size: 3.125rem;
+    opacity: 0.7;
+    margin-right: 0.31rem;
+}
+
+.avaliacao::after{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    content: '\201E';
+    font-size: 3.125rem;
+    opacity: 0.7;
+    margin-right: 0.31rem;
+}
+
+.persona-descricao{
+    width: 25rem;
+    padding-top:1.25rem ;    
+    margin: 0px 1.25rem;
+}
+
+.avaliacao-persona img{
+    width: 18.75rem;
+    height: 18.75rem;
+}
+
+.persona-texto{
+    display: flex;
+    color: var(--azul_bebe);
+    line-height: 2.37rem;
+    width: 50vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+.persona-nome{
+    font-weight: 100;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 1.875rem;
+}
+
+.vantagens{
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    background-color:  var(--cinza);
+    align-items: center;
+    justify-content: center;
+    gap: 3.125rem;
+    height: 100vh;
+    
+}
+
+.vantagens-titulo{
+    color: var(--background);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+}
+
+.vantagens-lista{
+    width: 25rem;
+    list-style: circle;
+    color: var(--verde_escuro);
+    line-height: 1.87rem;
+    font-weight: 500;
+}
+
+/*SEÇÃO QUEM SOMOS =======================================================*/
+
+.quemsomos{
+    background: var(--cinza);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.quemsomos-textos{
+    margin-top: 7.87rem;
+    width: 31.25rem;
+}
+
+.quemsomos-imagem{
+    margin-top: 7.87rem;
+    max-height: 28.125rem;
+}
+
+.quemsomos-img{
+    display: none;
+}
+
+.quemsomos-titulo{
+    color: var(--background);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    letter-spacing: 0.09rem;
+    text-align: center;
+}
+
+.quemsomos-descricao{
+    color: var(--verde_escuro);
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: 0.09rem;
+    font-weight: 400;
+    margin-top: 6.25rem;
+}
+
+/*SEÇÃO FALE CONOSCO =======================================================*/
+
+.faleconosco{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;    
+}
+
+.faleconosco-formulario{
+    margin-top: 1.25rem;
+}
+
+.faleconosco-titulo{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    color: var(--cinza);
+    margin-top: 7.87rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    line-height: 2rem;
+}
+
+.faleconosco-campo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 0.625rem;
+}
+.faleconosco-texto{
+    text-transform: uppercase;
+    color: var(--azul_bebe);
+    letter-spacing: 0.125rem;
+}
+
+.faleconosco-input {
+    font-family: 'Poppins', sans-serif;
+	display: block;
+	padding: 0.625rem 1.56rem;
+    font-size: 0.875rem;
+	width: 18.75rem;
+    height: 1.25rem;
+}
+
+input:focus { 
+    outline: none !important;
+    border-color: var(--azul_bebe);
+    box-shadow: 0 0 0.625rem var(--verde_piscina);
+}
+
+#mensagem{
+    width: 18.75rem;
+    height: 9.375rem;
+    padding: 0.625rem 1.56rem;
+    font-size: 0.875rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#mensagem:focus{
+    outline: none !important;
+    border-color: var(--azul_bebe);
+    box-shadow: 0 0 0.625rem var(--verde_piscina);
+}
+
+#erro-msg,#erro-email{
+    color: red;
+    font-weight: 400;
+    font-size: 0.875rem;
+    margin-top: 0.31rem;
+}
+
+#msg-sucess{
+    color: #32CD32;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.enviar {
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    font-weight: 700;
+	width: 30%;
+	padding: 0.93rem 0;
+	background: var(--verde_piscina);
+	color:var(--cinza);
+	border: none;
+	border-radius: 0.31rem;
+	transition: 1s all; 
+	cursor: pointer;
+    margin-top: 1.25rem;
+}
+
+.enviar:hover {
+	background: var(--azul_bebe);
+    color:var(--azul_petroleo);
+    font-size: 1.125rem;
+    width: 35%;
+    transition: 0.8s
+}
+
+/*SEÇÃO RODAPE / REDE SOCIAIS =======================================================*/
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:6.25rem;
+    background-color: var(--cinza);
+    align-items: center;
+}
+
+.rodape p{
+    font-size: 12px;
+    color: #808080;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.rodape-lista{
+    display: inline;
+    margin: 0 1.5rem;
+}
+
+.rodape img{
+    margin-top: 25px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+

@@ -1,0 +1,238 @@
+@media screen and (max-width: 1024px) {
+    html{
+        scroll-behavior: smooth;
+    }
+
+/*SEÇÃO HEADER / MENU =======================================================*/
+
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 5.62rem;
+        padding: 0rem;
+        margin: 0rem;
+        position: fixed;
+        top: 0rem;
+        
+    }
+
+    .cabecalho-menu{
+        margin: 0.625rem 0rem;
+    }
+
+    .cabecalho-menu-lista{
+        margin: 0rem;
+    }
+    .cabecalho-menu-link{
+        font-size: 1rem;
+        font-weight: 500;
+        margin: 0 0.625rem 0rem;
+    }
+
+    .cabecalho-imagem{
+        width: 6.25rem;
+        height: 3rem;
+        margin: 0.125rem 0rem 0rem;
+    }
+
+/*SEÇÃO INICIO =======================================================*/
+
+
+    .conteudo-principal{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.625rem;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .conteudo-principal-imagem{
+        width: 15.62rem;
+        align-self: center;
+        margin-top: 0rem;
+    }
+
+    .conteudo-principal-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100vw;
+        margin-top: 1.25rem;
+    }
+    .conteudo-principal-titulo{
+        font-size: 2.5rem;
+        margin: 0;
+        margin-top: 3rem;
+        padding-top: 0;
+        line-height: 0.31rem;
+    }
+
+    .conteudo-principal-subtitulo{
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        width: 18.75rem;
+        margin-top: 1.87rem;
+    }
+
+    .conteudo-principal-botao{
+        margin: 0.93rem 0;
+        width: 70%;
+    }
+
+    .conteudo-principal-botao:hover{
+        background: var(--verde_piscina);
+        border: 0.06rem solid var(--azul_bebe);
+        font-size: 1.2rem;
+        font-weight: 500;
+        transition: 0.5s
+    }
+
+/*SEÇÃO IMAGENS  =======================================================*/
+
+    .galeria-imagens{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        padding: 0.625rem 0rem;
+    }
+
+    .galeria-imagens h1{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .foto-apartamento, .foto-estudante, .foto-interior{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.625rem;
+        margin: 0rem 0rem;
+    }
+
+    figcaption {
+        font-size: 0.875rem;
+        width: 11.25rem;
+    }
+
+    .foto-estudante{
+        margin-top: 0rem;
+    }
+
+    .imagens{
+        width: 8.125rem;
+        height: 11.25rem;
+    }
+
+    .imagens-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 0rem;
+        gap: 0rem;
+    }
+
+/*SEÇÃO AVALIAÇÃO / VANTAGENS =======================================================*/
+
+
+    .avaliacao-persona{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .avaliacao-persona img{
+        width: 9.37rem;
+        height: 9.37rem;
+    }
+
+    .persona-texto{
+        flex-direction: column;
+    }
+
+    .persona-texto p{
+        width: 18.75rem;
+        font-size: 0.8rem;
+        line-height: 1.25rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .vantagens{
+        width: 100vw;
+        height: 50vh;
+        gap: 1.25rem;
+    }
+
+    .vantagens-titulo{
+        text-align: center;
+        width: 18.75rem;
+        font-size: 2.5rem;
+        line-height: 2rem;
+        margin-top: 0.93rem;
+    }
+
+    .vantagens-lista{
+        display: flex;
+        width: 18.75rem;
+        flex-direction: column;
+        font-size:0.9rem;
+        line-height: 1.25rem;
+        text-align: left;
+        margin: 0 auto;
+        padding-bottom: 1.875rem;
+        font-weight: 500;
+    }
+
+/*SEÇÃO QUEM SOMOS =======================================================*/
+
+
+    .quemsomos{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        
+    }
+
+    .quemsomos-textos{
+        margin-top: 3.75rem;
+        width: 21.87rem;
+    }
+
+    .quemsomos-titulo{
+        font-size: 2.5rem;
+        margin: 0rem;
+    }
+
+    .quemsomos-descricao{
+        margin: 1.25rem 0.31rem;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 21.25rem;
+    }
+
+    .quemsomos-imagem{
+    display: none;
+    }
+
+    .quemsomos-img{
+        display: block;
+        width: 18.75rem;
+    }
+
+    /*SEÇÃO FALE CONOSCO =======================================================*/
+    .faleconosco{
+        justify-content: center;
+        margin-top: 3.125rem;
+    }
+    .faleconosco-titulo{
+        margin: 0;
+    }
+}
